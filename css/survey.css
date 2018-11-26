@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+#title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#description {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 1em;
+}
+
+#survey-form {
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.survey-labels{
+    font-size: 15px;
+    font-weight: 10px;
+    margin: 10px;
+}
+#name{
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    left: 15px;
+    width: 200px;
+    text-align: left;
+    border: 2px solid gray;
+    border-radius: 3px;
+    outline: none;
+}
+#name:focus{
+    border: 2px solid black;
+}
+#email{
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    left: 15px;
+    width: 200px;
+    text-align: left;
+    border: 2px solid gray;
+    border-radius: 3px;
+    outline: none;
+}
+#email:focus{
+    border: 2px solid black;
+}
+#number{
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    left: 20px;
+    width: 200px;
+    text-align: left;
+    border: 2px solid gray;
+    border-radius: 3px;
+    outline: none;
+}
+#number:focus{
+    border: 2px solid black;
+}
+h2{
+    font-size: 2em;
+    background-color: hsla(0, 0%, 50%, 0.65);
+}
+#dropdown{
+    width: 50%;
+    height: 30px;
+    border: 2px solid gray;
+    outline: none;
+    font-weight: bold;
+    
+}
+#dropdown:focus{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+h3{
+    font-size: 1.5em;
+}
+#satisfaction-score-note{
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
+}
+#satisfaction-improve{
+    margin: 5px;
+    resize: none;
+    width: 85%;
+    height: 100px;
+    padding: 5px 5px;
+    border: 4px solid gray;
+    border-radius: 8px;
+    outline: none;
+}
+#satisfaction-improve:focus{
+    border: 4px solid black;
+}
+#buisness-again{
+    display: inline;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: left;
+}
+#enjoyed-items{
+    display: inline;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: left;
+}
+#comments{
+    margin: 5px;
+    resize: none;
+    width: 85%;
+    height: 100px;
+    padding: 5px 5px;
+    border: 4px solid gray;
+    border-radius: 8px;
+    outline: none;
+}
+#submit, #reset {
+    margin: 5px;
+    padding: 10px;
+    width: 25%;
+    color: gray;
+    border: 2px solid gray;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.19), 0 8px 8px rgba(0, 0, 0, 0.23);
+}
+#submit:hover, #reset:hover{
+    color: black;
+    border: 2px solid black;
+    font-weight: bolder;
+}
+footer {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+}

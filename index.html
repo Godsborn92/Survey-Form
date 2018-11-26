@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/css/survey.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">RSI Energy Satisfaction Survey</h1>
+    </header>
+    <p id="description">Please fill out the form below and let us know how your solar experience has been so far?</p>
+    <main>
+        <form id="survey-form" action="/submit/submit-survey">
+            <label for="name" class="survey-labels" id="name-label">Name: </label><input type="text" id="name"
+                placeholder="Enter your full name" required autofocus><br>
+            <label for="email" class="survey-labels" id="email-label">Email: </label><input type="email" id="email"
+                placeholder="Enter email address" required><br>
+            <label for="age" class="survey-labels" id="number-label">Age: </label><input type="number" id="number"
+                placeholder="Enter Age" min="18" max="108" required>
+            <hr>
+            <h2>Overall Satisfaction Scores</h2>
+            <hr>
+            <h3>What would you rate your overall satisfaction?</h3>
+            <select name="satisfaction-score" id="dropdown">
+                <option value="Select One" disabled>Select One</option>
+                <option value="Completely satisfied" selected>Completely satisfied</option>
+                <option value="Can improve">Can improve</option>
+                <option value="Not satisfied">Not Satisfied</option>
+            </select>
+            <p id="satisfaction-score-note">If you selected anything but "<strong>Completely satisfied</strong>",
+                please explain on what we can do to
+                improve?<br><em>Skip if this doesn't apply.</em><br>
+                <textarea name="satisfaction-improve" id="satisfaction-improve" cols="30" rows="5" placeholder="Tell us how we can improve..."></textarea></p>
+            <h3>Would you consider doing business with us again?</h3>
+            <fieldset id="buisness-again">
+                <legend>Please choose one of these:</legend>
+                <label for="definetly" class="survey-labels">
+                    <input id="definetly" type="radio" name="buisness-again" value="definetly">Definetly
+                </label><br>
+                <label for="never" class="survey-labels">
+                    <input id="never" type="radio" name="buisness-again" value="never">Never
+                </label>
+            </fieldset>
+            <h3>What are some of things you enjoyed about our service?</h3>
+            <fieldset id="enjoyed-items">
+                <legend>Check all that apply:</legend>
+                <input type="checkbox" name="enjoyed-items" value="friendly">
+                <label for="friendly">Friendly</label><br>
+                <input type="checkbox" name="enjoyed-items" value="direct">
+                <label for="direct">Direct</label><br>
+                <input type="checkbox" name="enjoyed-items" value="responsive">
+                <label for="responsive">Responsive</label><br>
+                <input type="checkbox" name="enjoyed-items" value="quick">
+                <label for="quick">Quick</label><br>
+                <input type="checkbox" name="enjoyed-items" value="clean">
+                <label for="clean">Clean</label><br>
+                <input type="checkbox" name="enjoyed-items" value="afordable">
+                <label for="afordable">Afordable</label>
+            </fieldset>
+            <h3>Additional Comments</h3>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter comments here..."></textarea><br>
+            <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset" id="reset">
+        </form>
+    </main>
+    <footer>&COPY; RSI LLC</footer>
+</body>
+
+</html>
